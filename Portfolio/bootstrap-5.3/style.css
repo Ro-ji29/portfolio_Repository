@@ -1,0 +1,132 @@
+/* generale */
+/*  */
+
+:root {
+  --bgColor: #040404;
+  --primaryColor: #165496;
+}
+
+body {
+  background-color: #eee;
+}
+.navbar .nav_logo {
+  height: 50px;
+  width: 200;
+  object-fit: contain;
+  background-color: rgb(214, 217, 224);
+}
+.navbar {
+  background-color: var(--bgColor) !important;
+}
+.navbar ul li a {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.navbar ul li a:hover {
+  color: var(--primaryColor);
+  border: 1px solid #165496;
+}
+.nav-link {
+  color: #165496;
+}
+
+/* la banniere */
+
+.banner {
+  background-color: var(--bgColor);
+}
+.banner .banner_img {
+  background: url(../img/pro.jpg) no-repeat center/contain fixed;
+}
+
+.banner_overlay {
+  height: 800px;
+  background-color: rgba(25, 24, 24, 0.8);
+  color: white;
+  text-align: center;
+}
+
+.banner_overlay {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* about */
+
+section .container {
+  /* background-color: white; */
+  padding: 50px;
+  margin-top: 50px;
+  height: 550px;
+}
+
+.trai1 {
+  height: 2px;
+  background-color: var(--primaryColor);
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+.trai2 {
+  height: 5px;
+  background-color: var(--primaryColor);
+  width: 50px;
+  margin: 0 auto 30px;
+}
+.boite_icon .bi {
+  font-size: 40px;
+}
+.boite_icon {
+  height: 110px;
+  width: 110px;
+  border-radius: 100%;
+  border: 10px solid var(--primaryColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  cursor: pointer;
+}
+
+.card:hover .bi {
+  color: white !important;
+}
+
+.card:hover .boite_icon {
+  background-color: var(--primaryColor);
+  border: 10px solid rgb(125, 197, 213);
+  transition-duration: 0.5s;
+}
+
+/* worck */
+section#work {
+  background: url(../img/images/post-3.jpg) no-repeat center/cover fixed;
+}
+section#work .overlay2 {
+  height: 450px;
+  background-color: rgba(64, 64, 252, 0.76);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section#work .boite_icon2 {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  border: 80px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  cursor: pointer;
+}
+section#work .boite_icon2 .bi {
+  font-size: 30px;
+  color: white !important;
+}
